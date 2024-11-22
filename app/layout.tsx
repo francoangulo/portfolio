@@ -43,6 +43,14 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  keywords: [
+    "Franco Angulo",
+    "Fullstack Developer",
+    "Portfolio",
+    "React",
+    "React Native",
+    "NextJS",
+  ],
 };
 
 const cx = (...classes) => classes.filter(Boolean).join(" ");
