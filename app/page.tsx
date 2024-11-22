@@ -1,12 +1,15 @@
 import Image from "next/image";
 import { socialLinks } from "./config";
 
+const currentRoleTechnologies = ["React", "React Native", "NodeJS", "MongoDB"];
+const otherTechnologies = ["TypeScript", "NextJS", "SQL"];
+
 export default function Page() {
   return (
     <section>
-      <a href={socialLinks.twitter} target="_blank">
+      <a href={socialLinks.linkedin} target="_blank">
         <Image
-          src="/profile.webp"
+          src="/Profile.webp"
           alt="Profile photo"
           className="rounded-full bg-gray-100 block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5 "
           unoptimized
@@ -16,52 +19,66 @@ export default function Page() {
         />
       </a>
 
-      <h1 className="mb-8 text-2xl font-medium tracking-tight">
-        Portfolio, made simple!
-      </h1>
+      <h1 className="mb-4 text-xl font-medium tracking-tight">Franco Angulo</h1>
 
       <div className="prose prose-neutral dark:prose-invert">
+        <p>Based in Argentina. Seeking challenges and learning constantly</p>
+        <h2 className="mb- text-xl font-medium tracking-tight">Today</h2>
         <p>
-          A clean, fast, and lightweight portfolio template built with Next.js,
-          Vercel, and Tailwind CSS for optimal performance.
-        </p>
-        <p>
-          Nextfolio includes all the essentials for a stunning portfolio: SEO,
-          MDX support, RSS, Atom, & JSON feeds, analytics, tweet & YouTube
-          embeds, KaTeX integration, and{" "}
-          <a
-            target="_blank"
-            href="https://github.com/1msirius/Nextfolio?tab=readme-ov-file#features"
-          >
-            more
+          +2 years experienced <b>Fullstack Developer</b> at{" "}
+          <a target="_blank" href="https://mystrengthbook.com">
+            MyStrengthBook
           </a>
-          .
+          , helping the team develop features proficiently for web and mobile.
         </p>
         <p>
-          Nextfolio is{" "}
-          <a href={socialLinks.github} target="_blank">
-            open-source
-          </a>{" "}
-          and fully customizable, making it easy to add more features.
+          <i>#NextJS #React #ReactNative #TypeScript #NodeJS #SQL #Mongo</i>
         </p>
+        <h2 className="mb- text-xl font-medium tracking-tight">Technologies</h2>
         <p>
-          <a
-            href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F1msirius%2FNextfolio"
-            target="_blank"
-          >
-            Deploy
-          </a>{" "}
-          your Nextfolio site with Vercel in minutes and follow the set up
-          instructions in the{" "}
-          <a href="/blog/getting-started">Getting Started</a> post.
+          Working confidently with{" "}
+          {currentRoleTechnologies.map((tech, index) => (
+            <span key={tech}>
+              <b>
+                <i>#{tech}</i>
+              </b>
+              {index < currentRoleTechnologies.length - 1 ? ", " : ""}
+            </span>
+          ))}{" "}
+          on my current role.
+          <br />
+          Also comfortable with{" "}
+          {otherTechnologies.map((tech, index) => (
+            <span key={tech}>
+              <b>
+                <i>#{tech}</i>
+              </b>
+              {index < otherTechnologies.length - 1 ? ", " : ""}
+            </span>
+          ))}{" "}
+          as well.
         </p>
-        <p>
-          Built and maintained by{" "}
-          <a href="https://imsirius.xyz/" target="_blank">
-            Sirius
+        <h2 className="mb- text-xl font-medium tracking-tight">Connect</h2>
+        <span>
+          Let's have a conversation{" "}
+          <a href="mailto:francoangulo2001@gmail.com" target="_blank">
+            francoangulo2001@gmail.com
           </a>
-          .
-        </p>
+        </span>
+        <br />
+        <span>
+          Connect with me on{" "}
+          <a href={socialLinks.linkedin} target="_blank">
+            LinkedIn
+          </a>
+        </span>
+        <br />
+        <span>
+          Check my{" "}
+          <a href={"/resume.pdf"} target="_blank">
+            Resume
+          </a>
+        </span>
       </div>
     </section>
   );

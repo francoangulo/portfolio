@@ -3,7 +3,7 @@ export const metaData = {
   title: "Franco Angulo",
   name: "Franco",
   ogImage: "/opengraph-image.png",
-  description: "Franco Angulo - Fullstack Developer - Portfolio.",
+  description: "Franco Angulo is a fullstack developer based in Argentina.",
 };
 
 export const socialLinks = {
