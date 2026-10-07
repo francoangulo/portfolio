@@ -25,7 +25,7 @@ export default function Page() {
         <p>Based in Argentina. Seeking challenges and learning constantly</p>
         <h2 className="mb- text-xl font-medium tracking-tight">Today</h2>
         <p>
-          +3 years experienced <b>Fullstack Developer</b> at{" "}
+          +4 years experienced <b>Fullstack Developer</b> at{" "}
           <a target="_blank" href="https://mystrengthbook.com">
             MyStrengthBook
           </a>
